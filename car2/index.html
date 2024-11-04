@@ -14,6 +14,126 @@
     <a href="../cart">Cart</a>
 </div>
 
+<div class="topbar">
+    <a href="..">Home</a>
+    <a href="../cart">Cart</a>
+</div>
+<div id="shift-right">
+
+
+    <div id="trims">
+        <h2 id="trim">Trim</h2>
+        <h4 id="trim-descriptions">Please select a trim:</h4>
+    </div>
+
+    <div id="trim-buttons">
+        <input type="radio" id="challenger-base" name="which-trim">
+        <label for="challenger-base">SXT | Starting MSRP: $32,800</label><br>
+        <ul>
+            <li>Cheapest model for those who are running low on funds.</li>
+            <ul>
+                <li>303 hp</li>
+                <li>23 MPG</li>
+                <li>5.3 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+        <input type="radio" id="xDrive" name="which-trim">
+        <label for="xDrive">M340i xDrive Sedan | Starting MSRP: $61,000</label><br>
+        <ul>
+            <li>Slightly more expensive than the Challenger GT and has slightly better stats.</li>
+            <ul>
+                <li>386 hp</li>
+                <li>33 MPG</li>
+                <li>4.1 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+
+        <input type="radio" id="m3-base" name="which-trim">
+        <label for="m3-base">M3 Sedan | Starting MSRP: $76,000</label>
+        <ul>
+            <li>More powerful than the 340is; ideal for sport-minded drivers.</li>
+            <ul>
+                <li>473 hp</li>
+                <li>23 MPG</li>
+                <li>4.1 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+
+        <input type="radio" id="comp" name="which-trim">
+        <label for="comp">M3 Competition Sedan | Starting MSRP: $80,200</label>
+        <ul>
+            <li>Faster than the M3 Sedan and has a quicker 0-60.</li>
+            <ul>
+                <li>503 hp</li>
+                <li>23 MPG</li>
+                <li>3.8 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+
+        <input type="radio" id="comp-xdrive" name="which-trim">
+        <label for="comp-xdrive">M3 Competition xDrive Sedan | Starting MSRP: $85,300</label>
+        <ul>
+            <li>Fastest out of the bunch, and the most expensive.</li>
+            <ul>
+                <li>523 hp</li>
+                <li>23 MPG</li>
+                <li>3.4 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="colors">
+        <h2>Color:</h2>
+        <h4>Please select a color for your M3.</h4>
+    </div>
+    <div id="color-buttons">
+        <input type="radio" id="alpine" name="which-color">
+        <label for="alpine">Alpine White - $0</label><br><br>
+
+        <input type="radio" id="sapphire" name="which-color">
+        <label for="sapphire">Black Sapphire Metal - $650</label><br><br>
+
+        <input type="radio" id="portimao" name="which-color">
+        <label for="portimao">Portimao Blue Metallic - $650</label><br><br>
+
+        <input type="radio" id="vegas" name="which-color">
+        <label for="vegas">Vegas Red Metallic - $650</label><br><br>
+
+        <input type="radio" id="tanzanite" name="which-color">
+        <label for="tanzanite">Tanzanite Blue II Metallic - $1,500</label><br>
+    </div>
+
+    <div id="options">
+        <h2>Options:</h2>
+        <h4>Add some additional features and to your Challenger.</h4>
+    </div>
+    <div id="option-buttons">
+        <input type="checkbox" id="feature1">
+        <label for="feature1"> M Carbon Bucket Seats - $4,500</label><br>
+        <ul>
+            <li>These bucket seats combine racing functionality with lightweight design and comfort for long distance driving.</li>
+        </ul>
+        <input type="checkbox" id="feature2">
+        <label for="feature2"> Front ventilated Seats - $500</label><br>
+        <ul>
+            <li>Ventilated seats that move air through the leather, keeping you comfortable all year long.</li>
+        </ul>
+        <input type="checkbox" id="feature3">
+        <label for="feature3"> Carbon  Package - $14,300</label><br>
+        <ul>
+            <li>Perfect for the M enthusiast. Comes with Carbon Fiber interior trim, M Alcantara steering wheel, M carbon ceramic brakes, M Drive Professional and M-specific Heads-up Display.</li>
+        </ul>
+        <input type="checkbox" id="feature4">
+        <label for="feature4"> Moonroof - $0</label><br>
+        <ul>
+            <li>Glass moonroof that slides back to let as much fresh air as you like, and a wind deflector that keeps strong breezes out.</li>
+        </ul>
+    </div>
+
+
+    <a id="dodge-addcart" onclick="addToCart()">ADD TO CART</a>
+
+</div>
 
 </body>
 </html>
