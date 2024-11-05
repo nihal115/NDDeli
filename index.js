@@ -1,5 +1,7 @@
 let bmwCost = 0;
 let purchases = [];
+let arr = [];
+let items=0;
 
 
 function bmwTrim() {
@@ -67,44 +69,49 @@ function bmwOptions() {
 
 
 function loadCart() {
-    let arr = [];
+
     arr.push(bmwTrim());
     arr.push(bmwColors());
     arr.push(bmwOptions());
     arr.push(bmwCost);
-    const container=document.getElementById("cartItems");
-    container.innerHTML;
-    arr.forEach(item => {
-        const div = document.createElement('div');
-        div.textContent = item;
-        container.appendChild(div);
-    });
+    makeList(arr)
+    // arr.forEach(item => {
+    //     const div = document.createElement('li');
+    //     div.textContent = item;
+    //     container.appendChild(div);
+    // });
+
+    let list=document.getElementById("myList");
+    for(i=0;i<arr.length;i++){
+        let li = document.createElement('li');
+        li.innerText = arr[i];
+        list.appendChild(li);
+    }
+
 }
 
 
-function orderItem(obj) {
-    let length = localStorage.length;
-    localStorage.setItem(length.toString(), JSON.stringify(obj));
+function orderItem(obj){
+    items = localStorage.length;
+    localStorage.setItem(items.toString(), JSON.stringify(obj));
     purchases = [];
-    for (let i = 0; i < localStorage.length; i++) {
+    for(let i = 0; i < items; i++){
         purchases.push(JSON.parse(localStorage.getItem(i.toString())));
     }
 }
-
 function makeList(){
-    length = localStorage.length;
-    for(let i = 0; i < length; i++){
+    items = localStorage.length;
+    for(let i = 0; i < items; i++){
         purchases.push(JSON.parse(localStorage.getItem(i.toString())));
     }
 }
-
-function fillOrder() {
+function fillOrder(){
     makeList()
-    for (let i = 0; i < length; i++) {
+    for(let i = 0; i < items; i++){
         let obj = purchases[i];
         let div = document.createElement("div");
         div.className = "orderItem";
-
+        div.innerHTML = "<div>" + "<h2>" + obj[0] + "</h2>" + "<p> " + obj[1] + "</p>" + "<p>Type: " + obj[2] + "</p>" + "<p>" + obj[3] + "</p>" + "<p>" + obj[4] + "</p>" + "</p>" + "<p> " + obj[5] + "</p>" + "<p> " + obj[6] + "</p>" + "<p> " + obj[7] + "</p>" + "</p>" + "</p>" + "</div>" + "<div>" + "<h1>$" + obj[8] + "</h1>" + "</div>";
         document.body.appendChild(div);
     }
 }
