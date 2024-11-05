@@ -2,16 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Porsche 911 Customization</title>
+    <title>Porsche Customization</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
+    <link href="https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular"
+          rel="stylesheet">
 </head>
 <body>
+
+
 
 
 <div class = "topbar">
     <a href="..">Home</a>
     <a href="../cart">Cart</a>
+</div>
+
+
+<div class="topbar">
+    <a href="..">Home</a>
+    <a href="../cart">Cart</a>
+</div>
+<div id="shift-right">
+
+
+
+
+    <div id="trims">
+        <h2 id="trim">Trim</h2>
+        <h4 id="trim-descriptions">Please select a trim:</h4>
+    </div>
+
+
+    <div id="trim-buttons">
+        <input type="radio" id="carrera" name="which-trim">
+        <label for="carrera">911 Carrera | Starting MSRP: $120,100</label><br>
+        <ul>
+            <li>Cheapest model for those who are running low on funds.</li>
+            <ul>
+                <li>388 hp</li>
+                <li>21 MPG</li>
+                <li>3.9 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+        <input type="radio" id="carrera-4gts" name="which-trim">
+        <label for="carrera-4gts">911 Carrera 4 GTS | Starting MSRP: $172,700</label><br>
+        <ul>
+            <li>Almost 200hp more than the base.</li>
+            <ul>
+                <li>532 hp</li>
+                <li>19 MPG</li>
+                <li>2.9 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+
+
+        <input type="radio" id="cabriolet" name="which-trim">
+        <label for="cabriolet">911 Carrera Cabriolet | Starting MSRP: $133.400</label>
+        <ul>
+            <li>Similar to the 911 Carrera, but a convertible for those who like feeling the fresh-air while driving.</li>
+            <ul>
+                <li>388 hp</li>
+                <li>21 MPG</li>
+                <li>4.1 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+
+
+        <input type="radio" id="turboS" name="which-trim">
+        <label for="turboS">911 Turbo S | Starting MSRP: $230,400</label>
+        <ul>
+            <li>Similar to Hellcat Jailbreak with wider fender flares with larger tires, better for handling and is faster.</li>
+            <ul>
+                <li>640 hp</li>
+                <li>18 MPG</li>
+                <li>2.6 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+
+
+        <input type="radio" id="gt3" name="which-trim">
+        <label for="gt3">911 GT3 RS | Starting MSRP: $241, 300</label>
+        <ul>
+            <li>Most expensive 911 model, best looking and most sporty.</li>
+            <ul>
+                <li>518 hp</li>
+                <li>16 MPG</li>
+                <li>3.0 seconds 0-60 MPH</li>
+            </ul>
+        </ul>
+    </div>
+
+
+    <div id="colors">
+        <h2>Color:</h2>
+        <h4>Please select a color for your Porsche.</h4>
+    </div>
+    <div id="color-buttons">
+        <input type="radio" id="white" name="which-color">
+        <label for="white">White - $0</label><br><br>
+
+
+        <input type="radio" id="black" name="which-color">
+        <label for="black">Black - $0</label><br><br>
+
+
+        <input type="radio" id="silver" name="which-color">
+        <label for="silver">GT Silver Metallic - $830</label><br><br>
+
+
+        <input type="radio" id="red" name="which-color">
+        <label for="red">Guards Red - $1,490</label><br><br>
+
+
+        <input type="radio" id="reddish" name="which-color">
+        <label for="reddish">Carmine Red - $3.260</label><br><br>
+    </div>
+
+
+    <div id="options">
+        <h2>Options:</h2>
+        <h4>Add some additional features and to your Porsche.</h4>
+    </div>
+    <div id="option-buttons">
+        <input type="checkbox" id="feature1">
+        <label for="feature1"> Sport Exhaust System - $4,030</label><br>
+        <ul>
+            <li>Modified mufflers and Titanium tailpipes.</li>
+        </ul>
+        <input type="checkbox" id="feature2">
+        <label for="feature2"> Front Axle Lift System - $2,980</label><br>
+        <ul>
+            <li>Raises the front-axle by 1.5 inches by pushing a button to increase ground clearance.</li>
+        </ul>
+        <input type="checkbox" id="feature3">
+        <label for="feature3"> Sport Chrono Package - $2,400</label><br>
+        <ul>
+            <li>Plenty track features, including shift paddles and PSM Sport Mode. </li>
+        </ul>
+        <input type="checkbox" id="feature4">
+        <label for="feature4"> Power Steering Plus - $300</label><br>
+        <ul>
+            <li>Speed-sensitive steering system. Reduces steering effort during turns and lower speeds.</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <a id="porsche-addcart" onclick="porscheCart()">ADD TO CART</a>
+
+
 </div>
 
 
